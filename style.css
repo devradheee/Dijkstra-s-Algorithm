@@ -1,0 +1,104 @@
+/* Updated CSS for the 90s-style preloader */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive;
+    /* Fun 90s font */
+    animation: changeBackground 7s linear infinite;
+    /* Changing gradient background */
+}
+
+@keyframes changeBackground {
+    0% {
+        background: linear-gradient(to bottom, #FFCCCC, #CC99FF);
+        /* Light gradient colors */
+    }
+
+    50% {
+        background: linear-gradient(to bottom, #99CCFF, #FFCCCC);
+        /* Changing gradient */
+    }
+
+    100% {
+        background: linear-gradient(to bottom, #CC99FF, #99CCFF);
+        /* Light gradient colors */
+    }
+}
+
+/* Center content */
+.preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* Styling for headings */
+h1,
+h2,
+p {
+    text-align: center;
+    color: #333333;
+    /* Darker text color */
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2,
+p {
+    font-size: 2em;
+}
+
+/* Styling for the team members section */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    margin: 10px;
+}
+
+.member h2 {
+    font-size: 1.5em;
+    color: #FF6600;
+    /* Orange text color */
+    transition: color 0.3s ease-in-out;
+    /* Smooth color transition */
+}
+
+.member h2:hover {
+    color: #3366FF;
+    /* Darker blue on hover */
+    cursor: pointer;
+}
+
+/* Styling for the button */
+.buttons-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button#mainProjectButton {
+    padding: 10px 20px;
+    background-color: #33CCFF;
+    /* Light blue button */
+    color: #FFFFFF;
+    /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button#mainProjectButton:hover {
+    background-color: #3366FF;
+    /* Darker blue on hover */
+}
