@@ -1,0 +1,189 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #d4e6f1, #f0f0f0, #f9e3bb);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #333;
+    /* Adjust text color for better readability */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+svg {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+/* Adjust the node text color for visibility */
+.nodeText {
+    font-size: 12px;
+    text-anchor: middle;
+    pointer-events: none;
+    fill: white;
+    /* Change the fill color to white for visibility */
+}
+
+.weightText {
+    font-size: 10px;
+    fill: #333;
+    text-anchor: middle;
+}
+
+/* Result Display Styling */
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+#result h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+#result p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+#result p:last-child {
+    border: none;
+}
+/* Basic CSS styles */
+/* ... (previously defined styles) */
+/* Title animation */
+h1 {
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    animation: rotateColor 4s ease-in-out infinite alternate, pulse 1.5s ease-in-out infinite;
+    color: #3498db;
+}
+
+/* Animation keyframes for rotation */
+@keyframes rotateColor {
+    0% {
+        color: #3498db;
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        color: #e74c3c;
+        transform: rotateY(90deg);
+    }
+
+    50% {
+        color: #9b59b6;
+        transform: rotateY(180deg);
+    }
+
+    75% {
+        color: #2ecc71;
+        transform: rotateY(270deg);
+    }
+
+    100% {
+        color: #3498db;
+        transform: rotateY(360deg);
+    }
+}
+
+/* Animation keyframes for pulsating */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Additional animations or styles can be added as needed */
+/* Additional styling can be added as needed */
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+}
